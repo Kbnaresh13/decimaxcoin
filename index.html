@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>DECIMAX COIN (DCMX) — Advanced Crypto & Finance Calculators</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="decimax-logo.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="site-header">
+      <img src="decimax-logo.png" alt="Decimax Coin Logo" class="logo">
+      <div class="coin-title">
+        <span>DECIMAX COIN</span> <span class="ticker">(DCMX)</span>
+      </div>
+    </header>
+    <!-- Welcome -->
+    <section class="welcome">
+      <h2>Welcome to DECIMAX COIN (DCMX)</h2>
+      <p class="coin-desc">
+        DECIMAX COIN (DCMX) is a next-generation utility token built to bring mathematical precision to the world of finance. Designed for traders, investors, and everyday users, DECIMAX integrates advanced calculation tools for crypto, stocks, and SIP planning.
+      </p>
+      <a class="buy-btn" href="#" target="_blank">BUY NOW</a>
+    </section>
+    <!-- Calculators Section -->
+    <section class="calculators">
+      <div class="calc-group">
+        <h3>Normal Calculator</h3>
+        <div class="calc-opts">
+          <button onclick="openModal('android')">Android Calculator</button>
+          <button onclick="openModal('ios')">iPhone Calculator</button>
+        </div>
+      </div>
+      <div class="calc-group">
+        <h3>Crypto Calculator</h3>
+        <div class="calc-opts">
+          <button onclick="openModal('crypto-invest')">Crypto Investment</button>
+          <button onclick="openModal('crypto-trading')">Crypto Trading (F&amp;O)</button>
+        </div>
+      </div>
+      <div class="calc-group">
+        <h3>Stock Calculator</h3>
+        <div class="calc-opts">
+          <button onclick="openModal('stock-invest')">Stock Investment &amp; Trading</button>
+          <button onclick="openModal('sip-calc')">SIP Calculation</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Modals -->
+  <div id="modal-bg" class="modal-bg" onclick="closeModal(event)">
+    <!-- Dynamic content goes here -->
+    <div id="modal-content" class="modal-content" onclick="event.stopPropagation()">
+      <!-- Calculator content injected here -->
+    </div>
+  </div>
+
+  <!-- Social Media Row -->
+  <div class="social-row">
+    <a href="#" title="X (Twitter)" target="_blank" class="social-icon">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4.2 3h4.8l3.1 5 3.1-5h4.8l-6.1 9.7L19.5 21h-4.9l-3.3-5.3-3.3 5.3H3.2l6.4-10.3L4.2 3zm4.8 15.1 6.1-9.7-6.1-9.7v19.4z"/></svg>
+    </a>
+    <a href="#" title="Telegram" target="_blank" class="social-icon">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.03 15.604 7.34 18.266c-.22.365-.65.258-.747-.183L4.58 8.174c-.26-.926.443-1.4 1.29-1.125l13.272 4.018c.894.306.875.862-.02 1.18l-3.247 1.19-1.429 4.632c-.22.7-.54.873-1.09.58z"/></svg>
+    </a>
+    <a href="#" title="Website" target="_blank" class="social-icon">
+      <svg viewBox="0 0 24 24"><circle fill="currentColor" cx="12" cy="12" r="10"/><path fill="#111" d="M7 12h10"></path></svg>
+    </a>
+    <a href="#" title="Medium" target="_blank" class="social-icon">
+      <svg viewBox="0 0 24 24"><circle fill="currentColor" cx="5" cy="12" r="4"/><ellipse fill="currentColor" cx="12" cy="12" rx="4" ry="7"/><circle fill="currentColor" cx="19" cy="12" r="2"></circle></svg>
+    </a>
+    <a href="#" title="Reddit" target="_blank" class="social-icon">
+      <svg viewBox="0 0 24 24"><ellipse fill="currentColor" cx="12" cy="17" rx="7" ry="5"/><circle fill="currentColor" cx="5" cy="9" r="2"/><circle fill="currentColor" cx="19" cy="9" r="2"/><circle fill="#111" cx="15" cy="17" r="1"/><circle fill="#111" cx="9" cy="17" r="1"/></svg>
+    </a>
+  </div>
+  <!-- Footer -->
+  <footer>
+    © 2025 DECIMAX COIN (DCMX). All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
