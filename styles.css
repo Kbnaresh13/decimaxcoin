@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #181818;
+  color: #eaf4fa;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  padding: 24px 8px 0 8px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background: #262626;
+  border-radius: 18px;
+  border: 2px solid #11edd3;
+  box-shadow: 0 4px 12px #0edbcd33;
+  padding: 8px;
+}
+
+.coin-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #11edd3;
+  letter-spacing: 1px;
+}
+.ticker {
+  color: #eaf4fa;
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.welcome {
+  background: #21242b;
+  border-radius: 14px;
+  padding: 18px 22px 18px 22px;
+  box-shadow: 0 2px 10px #11edd333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.coin-desc {
+  margin: 18px 0 14px 0;
+  color: #b0e2ff;
+  font-size: 1.08rem;
+}
+
+.buy-btn {
+  display: inline-block;
+  background: linear-gradient(90deg,#10ffe5 60%,#1284ff 100%);
+  color: #181818;
+  font-weight: bold;
+  padding: 10px 32px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.17s;
+  box-shadow: 0 0px 12px #11edd26e;
+  margin-bottom: 6px;
+}
+.buy-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg,#0efbdb 60%,#35a4ff 100%);
+}
+
+/* Calculators section */
+.calculators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
+  justify-content: center;
+  margin: 30px 0 42px 0;
+}
+
+.calc-group {
+  background: #232e37;
+  padding: 20px 26px;
+  border-radius: 16px;
+  box-shadow: 0 1px 10px #093e4347;
+  min-width: 210px;
+  flex: 1 1 240px;
+  max-width: 320px;
+  text-align: center;
+}
+.calc-group h3 {
+  color: #11edd3;
+  letter-spacing: .5px;
+  margin-bottom: 13px;
+}
+.calc-opts button {
+  background: #10191f;
+  color: #19ffe0;
+  font-size: 1.07rem;
+  padding: 9px 13px;
+  margin: 6px 5px;
+  border: 1.7px solid #0efbdb;
+  box-shadow: 0 1px 8px #0edbcd28;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .15s;
+}
+.calc-opts button:hover {
+  background: #1aecff;
+  color: #1c272e;
+  border-color: #17bef1;
+}
+
+/* Modal/Popup */
+.modal-bg {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1000;
+  background: #000a;
+  justify-content: center;
+  align-items: center;
+}
+.modal-bg.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #232e37;
+  color: #eaf4fa;
+  border-radius: 14px;
+  box-shadow: 0 6px 26px #11edd278, 0 1px 1.5px #222a;
+  min-width: 312px;
+  max-width: 98vw;
+  padding: 0;
+  position: relative;
+}
+.modal-header {
+  background: #161f29cc;
+  padding: 15px 36px 10px 36px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  font-size: 1.17rem;
+  font-weight: bold;
+  color: #11edd3;
+  text-align: center;
+}
+.close-modal-btn {
+  position: absolute;
+  top: 16px;
+  right: 27px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #13f1e2;
+  cursor: pointer;
+}
+
+/* Social row */
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 38px auto 6px auto;
+}
+.social-icon {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  background: #141e26;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #11edd3;
+  font-size: 1.4em;
+  border: 1.3px solid #1ce8de;
+  transition: background 0.18s, color 0.19s;
+}
+.social-icon:hover {
+  background: #13e3e675;
+  color: #232e37;
+}
+
+footer {
+  text-align: center;
+  color: #8fdadd;
+  margin: 18px 0 12px 0;
+  font-size: 0.98rem;
+  letter-spacing: .3px;
+}
+
+@media (max-width: 780px) {
+  .container { padding: 17px 1px 0 1px; }
+  .calculators { gap: 18px 6px; }
+}
+
+@media (max-width: 500px) {
+  .container { max-width: 99vw; }
+  .site-header .logo { width: 44px; height: 44px; }
+  .coin-title { font-size: 1.19rem; }
+  .modal-content { min-width: 98vw; }
+  }
