@@ -1,1 +1,1 @@
-# decimaxcoin
+# decimaxcoin website
